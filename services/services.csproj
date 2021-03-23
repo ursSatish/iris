@@ -2,7 +2,26 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
   </PropertyGroup>
-
-
+  <ItemGroup>
+    <Folder Include ="wwwroot\"/>
+    <Content Update="nlog.config" CopyToOutputDirectory ="PreserveNewest"/>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Belgrade.Sql.Client" version="1.1.4"/>
+    <PackageReference Include="EPPlus.Core" version="1.5.4"/>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" version="2.1.1"/>
+    <PackageReference Include="Microsoft.AspNetCore.Cors" version="2.1.1"/>
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" version="5.2.4"/>
+    <PackageReference Include="NLog.Web.AspNetCore" version="4.5.1"/>
+    <PackageReference Include="NLog" version="4.5.1"/>
+    <PackageReference Include="Microsoft.Windows.Compatibility" version="2.0.1"/>
+    <PackageReference Include="Newtonsoft.Json.Schema" version="3.0.3"/>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="IRIS.txt">
+      <CopyToOutputDirectory>PreserveNewest"</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>
