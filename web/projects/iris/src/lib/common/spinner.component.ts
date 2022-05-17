@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { LoadingService } from '../core/loading.service';
 
 @Component({
-  selector: 'edge-spinner',
+  selector: 'iris-spinner',
   template: `
     <div *ngIf="loadingService.isLoading.value" class="overlayDIV">
       <div class="center-loader">
