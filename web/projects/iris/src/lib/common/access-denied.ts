@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
     </div>
   `,
 })
-export class AccssDeniedComponent implements OnInit {
+export class AccessDeniedComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
