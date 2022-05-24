@@ -22,7 +22,7 @@ export class StoreService {
     return data.CategoryCodeID;
   });
   fileUploadList = [];
-  removedttachmentList = [];
+  removeAttachmentList = [];
   removeControlData: any[] = [];
   breadcrumbs!: Breadcrumb[];
   permissions: any;
